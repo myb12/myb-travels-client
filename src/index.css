@@ -11,3 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.btn-regular{
+  background-color: green !important;
+  padding: 10px 30px !important;
+}

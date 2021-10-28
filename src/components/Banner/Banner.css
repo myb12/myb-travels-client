@@ -1,0 +1,25 @@
+.banner-section{
+    height:500px;
+    background-image: url(http://www.shmai.com/preview/travelco/assets/images/bg/home2bg.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner img{
+    width:100%;
+}
+
+.banner-field{
+    margin-top: 100px;
+    background-color: #c2d0bd;
+    padding: 20px 0;
+}
+
+.banner-heading{
+    color:#fff;
+    font-size: 32px;;
+}
+
+.banner-section button{
+    margin-top: 30px;
+}
