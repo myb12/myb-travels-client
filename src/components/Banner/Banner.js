@@ -38,9 +38,7 @@ const Banner = () => {
                     </Col>
                 </Row>
                 <div className="d-flex justify-content-center">
-                    <Button className="btn-regular text-center">
-                        GO
-                    </Button>
+                    <button className="btn btn-regular text-center">GO</button>
                 </div>
             </Container>
         </section >
