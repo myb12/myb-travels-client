@@ -7,25 +7,29 @@ import Banner from './components/Banner/Banner';
 import Home from './components/Home/Home';
 import OrderPlace from './components/OrderPlace/OrderPlace';
 import Login from './components/Login/Login';
+import AuthProvider from './context/AuthProvider';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
-    <Router>
-      <Header />
-      <Switch>
+    <AuthProvider>
+      <Router>
+        <Header />
+        <Switch>
 
-        <Route exact path="/">
-          <Home />
-        </Route>
+          <Route exact path="/">
+            <Home />
+          </Route>
 
-        <Route path="/order-place">
-          <OrderPlace />
-        </Route>
-        <Route path="/login">
-          <Login />
-        </Route>
-      </Switch>
-    </Router>
+          <PrivateRoute path="/order-place">
+            <OrderPlace />
+          </PrivateRoute>
+          <Route path="/login">
+            <Login />
+          </Route>
+        </Switch>
+      </Router>
+    </AuthProvider>
   );
 }
 
