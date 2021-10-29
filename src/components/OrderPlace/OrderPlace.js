@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Form, Row } from 'react-bootstrap';
-import { useParams } from 'react-router';
+import { useHistory, useParams } from 'react-router';
 import useAuth from '../../hooks/useAuth';
 import './OrderPlace.css';
 
@@ -8,6 +8,7 @@ const OrderPlace = () => {
     const [specificService, setSpecificService] = useState({});
     const { user } = useAuth();
     const { serviceId } = useParams();
+    const history = useHistory();
 
     useEffect(() => {
         fetch(`http://localhost:5000/services/${serviceId}`)
@@ -59,7 +60,7 @@ const OrderPlace = () => {
         specificService.name = user.displayName;
         specificService.email = user.email;
         specificService.orderStatus = "Pending";
-        
+
         delete specificService._id;
         console.log(specificService);
         fetch('http://localhost:5000/orders', {
@@ -74,6 +75,7 @@ const OrderPlace = () => {
                 if (result.insertedId) {
                     alert('Order processed successfully');
                     setSpecificService({});
+                    history.push('/my-orders');
                 }
             })
     }
@@ -87,26 +89,32 @@ const OrderPlace = () => {
                             <Form.Label>Name</Form.Label>
                             <Form.Control onChange={handleNameChange} type="text" placeholder="Insert Your Name" value={user.displayName} />
                         </Form.Group>
+
                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                             <Form.Label>Email address</Form.Label>
                             <Form.Control onChange={handleEmailChange} type="email" placeholder="name@example.com" value={user.email} />
                         </Form.Group>
+
                         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                             <Form.Label>Address</Form.Label>
                             <Form.Control onChange={handleAddressChange} as="textarea" rows={3} value={specificService?.address || ''} />
                         </Form.Group>
+
                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                             <Form.Label>Tour Title</Form.Label>
                             <Form.Control onChange={handleTitleChange} type="text" value={specificService?.title || ''} placeholder="Insert Your Name" />
                         </Form.Group>
+
                         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                             <Form.Label>Tour Description</Form.Label>
                             <Form.Control onChange={handleDescriptionChange} value={specificService?.desc || ''} as="textarea" rows={3} />
                         </Form.Group>
+
                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                             <Form.Label>Tour Price</Form.Label>
                             <Form.Control onChange={handlePriceChange} value={specificService?.price || ''} type="text" placeholder="Insert Your Name" />
                         </Form.Group>
+
                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                             <img style={{ width: 150 }} src={specificService?.imgURL || ''} alt="" />
                         </Form.Group>

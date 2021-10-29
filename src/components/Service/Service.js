@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
+import { FaPlusCircle } from 'react-icons/fa';
 import { useHistory } from 'react-router';
 import './Service.css';
 
@@ -21,7 +22,9 @@ const Service = ({ service }) => {
                     </Card.Text>
                     <span>{price}</span>
                 </Card.Body>
-                <button className="btn btn-regular" onClick={() => handleBooking(_id)}>Book Now</button>
+                <button className="btn btn-regular d-flex align-items-center justify-content-center" onClick={() => handleBooking(_id)}>
+                    <FaPlusCircle className="me-1" /> Book Now
+                </button>
             </Card>
         </Col>
     );

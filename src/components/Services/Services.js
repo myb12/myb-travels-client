@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import Service from '../Service/Service';
-import services from '../../data/services.json'
+import CustomSpinner from '../Spinner/CustomSpinner';
 
 const Services = () => {
     const [services, setServices] = useState([]);
@@ -10,6 +10,9 @@ const Services = () => {
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
+    if (!services.length) {
+        return <CustomSpinner />
+    }
 
     return (
         <Container style={{ marginTop: 50 }}>

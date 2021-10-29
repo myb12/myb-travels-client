@@ -15,5 +15,14 @@
 .delete-icon:hover{
     background-color:#dc3545;
     color: #fff;
-;
+}
+
+.no-item-message{
+    padding: 20px;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+    border-radius: 6px;
+}
+.error-icon{
+    color: #dc3545;
+     font-size: 50px;
 }

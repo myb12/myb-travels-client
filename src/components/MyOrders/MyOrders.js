@@ -3,6 +3,7 @@ import { Container, Table } from 'react-bootstrap';
 import { FaTrashAlt } from 'react-icons/fa';
 import useAuth from '../../hooks/useAuth';
 import './MyOrders.css';
+import { BiError } from 'react-icons/bi';
 
 const MyOrders = () => {
     const { user } = useAuth();
@@ -50,7 +51,6 @@ const MyOrders = () => {
             })
     }
 
-
     return (
         <Container style={{ marginTop: 100 }}>
             <Table striped bordered responsive >
@@ -82,7 +82,8 @@ const MyOrders = () => {
                                     <FaTrashAlt />
                                 </div>
                             </td>
-                        </tr>)
+                        </tr>
+                        )
                     }
 
                 </tbody>

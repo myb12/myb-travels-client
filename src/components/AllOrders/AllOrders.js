@@ -47,8 +47,10 @@ const AllOrders = () => {
                 }
             })
     }
+
     return (
-        <Container style={{ marginTop: 100 }}>
+        <Container Container style={{ marginTop: 100 }
+        }>
             <Table striped bordered responsive >
                 <thead>
                     <tr>
@@ -87,7 +89,7 @@ const AllOrders = () => {
 
                 </tbody>
             </Table>
-        </Container>
+        </Container >
     );
 };
 

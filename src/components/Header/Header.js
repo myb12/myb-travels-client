@@ -1,9 +1,13 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import './Header.css';
 
+
+const activeStyle = {
+    color: '#62ac1e',
+}
 const Header = () => {
     const { user, logOut } = useAuth();
     return (
@@ -14,12 +18,13 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">
-                            <Nav.Link activeStyle={{ color: 'red' }} as={NavLink} to="/home">Home</Nav.Link>
-                            <Nav.Link activeStyle={{ color: 'red' }} as={NavLink} to="/my-orders">My Orders</Nav.Link>
+                            <Nav.Link activeStyle={activeStyle} as={NavLink} to="/home">Home</Nav.Link>
 
-                            <Nav.Link activeStyle={{ color: 'red' }} as={NavLink} to="/manage-orders">Manage Orders</Nav.Link>
+                            <Nav.Link activeStyle={activeStyle} as={NavLink} to="/add-service">Add Service</Nav.Link>
 
-                            <Nav.Link activeStyle={{ color: 'red' }} as={NavLink} to="/gffg">Add Service</Nav.Link>
+                            <Nav.Link activeStyle={activeStyle} as={NavLink} to="/my-orders">My Orders</Nav.Link>
+
+                            <Nav.Link activeStyle={activeStyle} as={NavLink} to="/manage-orders">Manage Orders</Nav.Link>
 
                             {
                                 user.email && <Nav.Link>
@@ -27,10 +32,11 @@ const Header = () => {
                                     {user.displayName}
                                 </Nav.Link>
                             }
+
                             {
                                 user.email ? <Nav.Link onClick={logOut} as={NavLink} to="/">Logout</Nav.Link>
                                     :
-                                    <Nav.Link activeStyle={{ color: 'red' }} as={Link} to="/login">Login</Nav.Link>
+                                    <Nav.Link activeStyle={{ color: 'red' }} as={NavLink} to="/login">Login</Nav.Link>
                             }
                         </Nav>
                     </Navbar.Collapse>
