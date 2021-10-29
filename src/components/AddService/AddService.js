@@ -9,7 +9,7 @@ const AddService = () => {
     const history = useHistory();
 
     const onSubmit = data => {
-        fetch('http://localhost:5000/services', {
+        fetch('https://glacial-tor-88710.herokuapp.com/services', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

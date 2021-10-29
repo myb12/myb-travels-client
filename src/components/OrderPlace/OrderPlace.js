@@ -11,7 +11,7 @@ const OrderPlace = () => {
     const history = useHistory();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/services/${serviceId}`)
+        fetch(`https://glacial-tor-88710.herokuapp.com/services/${serviceId}`)
             .then(res => res.json())
             .then(data => {
                 setSpecificService(data);
@@ -63,7 +63,7 @@ const OrderPlace = () => {
 
         delete specificService._id;
         console.log(specificService);
-        fetch('http://localhost:5000/orders', {
+        fetch('https://glacial-tor-88710.herokuapp.com/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

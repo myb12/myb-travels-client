@@ -10,7 +10,7 @@ const AllOrders = () => {
     const [isApprove, setIsApprove] = useState(false);
 
     useEffect(() => {
-        fetch('http://localhost:5000/all-orders')
+        fetch('https://glacial-tor-88710.herokuapp.com/all-orders')
             .then(res => res.json())
             .then(data => {
                 setAllOrders(data);
@@ -19,7 +19,7 @@ const AllOrders = () => {
 
     const handleDelete = (id) => {
         if (window.confirm('Do you really want to delete the product')) {
-            fetch(`http://localhost:5000/my-orders/${id}`, {
+            fetch(`https://glacial-tor-88710.herokuapp.com/my-orders/${id}`, {
                 method: 'DELETE',
             })
                 .then(res => res.json())
@@ -33,7 +33,7 @@ const AllOrders = () => {
     }
 
     const handleApprove = (id) => {
-        fetch(`http://localhost:5000/orders/${id}`, {
+        fetch(`https://glacial-tor-88710.herokuapp.com/orders/${id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
