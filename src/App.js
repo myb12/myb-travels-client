@@ -21,7 +21,7 @@ function App() {
             <Home />
           </Route>
 
-          <PrivateRoute path="/order-place">
+          <PrivateRoute path="/order-place/:serviceId">
             <OrderPlace />
           </PrivateRoute>
           <Route path="/login">

@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Poland",
+        "price": "BDT 60000",
+        "desc": "Book your Poland tour package to enjoy the music of Chopin in Warsaw. Journey to the little-known district of Praga.",
+        "imgURL": "http://www.shmai.com/preview/travelco/assets/images/tours/tours2.jpg"
+    },
+    {
+        "title": "Wales",
+        "price": "BDT 65000",
+        "desc": "Book your Wales tour package with Trafalgar and get to know the country through the locals, sharing stories.",
+        "imgURL": "http://www.shmai.com/preview/travelco/assets/images/tours/tours1.jpg"
+    },
+    {
+        "title": "Paris",
+        "price": "BDT 70000",
+        "desc": "Book your Paris tour package to enjoy Tanzania Serengeti Migration Safari & Kilimanjaro Climbing Tour. Safari. safari park.",
+        "imgURL": "http://www.shmai.com/preview/travelco/assets/images/tours/tours3.jpg"
+    },
+    {
+        "title": "Greek",
+        "price": "BDT 45000",
+        "desc": "Molnupiravir has promise as a COVID-19 treatment, but how much do we know about it...",
+        "imgURL": "http://www.shmai.com/preview/travelco/assets/images/tours/tours4.jpg"
+    },
+    {
+        "title": "Nepal",
+        "price": "BDT 50000",
+        "desc": "Exclusive 5 days 4 nights Kathmandu Pokhara holiday package tour. This is exclusive Nepal vacation package dealat Kathmandu.",
+        "imgURL": "https://i.ibb.co/QQXTb5L/article-5.jpg"
+    },
+    {
+        "title": "Switzerland",
+        "price": "BDT 85000",
+        "desc": "Book your Switzerland tour package with Trafalgar and consume smooth milk chocolate in the foothills of the Swiss Alps.",
+        "imgURL": "http://www.shmai.com/preview/travelco/assets/images/tours/tours4.jpg"
+    }
+]
