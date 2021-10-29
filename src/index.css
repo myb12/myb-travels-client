@@ -33,7 +33,7 @@ code {
 }
 
 .btn-regular:hover {
-    background: transparent !important;
+    background: #fff !important;
     color: #62ac1e !important;
     border-color: #62ac1e !important;
 }

@@ -3,23 +3,25 @@
     background-image: url(http://www.shmai.com/preview/travelco/assets/images/bg/home2bg.jpg);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:flex-end;
 }
 .banner img{
     width:100%;
 }
 
 .banner-field{
-    margin-top: 100px;
-    background-color: #c2d0bd;
+    background-color: #63ac1e9c;
     padding: 20px 0;
+    margin: 100px 10px 0 10px;
 }
 
 .banner-heading{
-    color:#fff;
-    font-size: 32px;;
+    color: #fff;
+    text-shadow: 2px 2px 18px #000;
+    font-weight: 700 ;
+    font-family: "Roboto", sans-serif;
 }
 
 .banner-section button{
-    margin-top: 30px;
+    margin: 20px 0;
 }

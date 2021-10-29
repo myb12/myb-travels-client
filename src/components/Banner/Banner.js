@@ -1,16 +1,13 @@
 import React from 'react';
-import { Col, Container, Row, Button } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import { FaMapMarkerAlt, FaRegCalendarAlt } from 'react-icons/fa';
 import './Banner.css';
 
 const Banner = () => {
     return (
-        <section className="banner-section">
-            {/* <div className="banner">
-                <img src="http://www.shmai.com/preview/travelco/assets/images/bg/home2bg.jpg" alt="" />
-            </div> */}
+        <section className="banner-section" >
             <Container className="banner-container">
-                <h1 className="banner-heading">PLAN YOUR TOUR</h1>
+                <h1 className="banner-heading">PLAN YOUR TOUR WITH MYB TRAVELS</h1>
                 <Row className="banner-field">
                     <Col md={4}>
                         <div className="input-group">

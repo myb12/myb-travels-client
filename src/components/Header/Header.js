@@ -8,18 +8,24 @@ const Header = () => {
     const { user, logOut } = useAuth();
     return (
         <section>
-            <Navbar bg="light" expand="lg">
+            <Navbar bg="light" expand="lg" fixed="top">
                 <Container >
                     <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">
                             <Nav.Link activeStyle={{ color: 'red' }} as={NavLink} to="/home">Home</Nav.Link>
+                            <Nav.Link activeStyle={{ color: 'red' }} as={NavLink} to="/my-orders">My Orders</Nav.Link>
+
+                            <Nav.Link activeStyle={{ color: 'red' }} as={NavLink} to="/manage-orders">Manage Orders</Nav.Link>
+
+                            <Nav.Link activeStyle={{ color: 'red' }} as={NavLink} to="/gffg">Add Service</Nav.Link>
+
                             {
-                                user.email && <Nav.Link activeStyle={{ color: 'red' }} as={NavLink} to="/my-orders">My Orders</Nav.Link>
-                            }
-                            {
-                                user.email && <span>{user.displayName}</span>
+                                user.email && <Nav.Link>
+                                    <img className="rounded-pill me-2" width="30" src={user.photoURL} alt="" />
+                                    {user.displayName}
+                                </Nav.Link>
                             }
                             {
                                 user.email ? <Nav.Link onClick={logOut} as={NavLink} to="/">Logout</Nav.Link>

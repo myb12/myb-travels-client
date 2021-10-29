@@ -58,6 +58,8 @@ const OrderPlace = () => {
         e.preventDefault();
         specificService.name = user.displayName;
         specificService.email = user.email;
+        specificService.orderStatus = "Pending";
+        
         delete specificService._id;
         console.log(specificService);
         fetch('http://localhost:5000/orders', {

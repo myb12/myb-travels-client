@@ -1,0 +1,19 @@
+.delete-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 45px;
+    color:#dc3545;
+    cursor: pointer;
+    background-color: rgb(205, 245, 188);
+    border-radius: 50px;
+    padding:15px;
+    transition: all 0.3s linear;
+}
+
+.delete-icon:hover{
+    background-color:#dc3545;
+    color: #fff;
+;
+}
