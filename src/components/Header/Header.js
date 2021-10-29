@@ -36,7 +36,7 @@ const Header = () => {
                             {
                                 user.email ? <Nav.Link onClick={logOut} as={NavLink} to="/">Logout</Nav.Link>
                                     :
-                                    <Nav.Link activeStyle={{ color: 'red' }} as={NavLink} to="/login">Login</Nav.Link>
+                                    <Nav.Link activeStyle={activeStyle} as={NavLink} to="/login">Login</Nav.Link>
                             }
                         </Nav>
                     </Navbar.Collapse>

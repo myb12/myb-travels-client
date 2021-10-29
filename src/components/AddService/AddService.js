@@ -31,7 +31,7 @@ const AddService = () => {
 
 
     return (
-        <Container style={{ marginTop: 80 }}>
+        <Container style={{ marginTop: 100 }}>
             <form className="shipping-form" onSubmit={handleSubmit(onSubmit)}>
 
                 <Card>

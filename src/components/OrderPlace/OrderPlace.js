@@ -81,7 +81,7 @@ const OrderPlace = () => {
     }
 
     return (
-        <Container style={{ marginTop: 30 }}>
+        <Container style={{ marginTop: 100 }}>
             <Row className="d-flex justify-content-center">
                 <Col sm={8}>
                     <Form onSubmit={handleSubmit}>

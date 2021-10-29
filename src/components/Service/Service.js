@@ -9,7 +9,8 @@ const Service = ({ service }) => {
     const history = useHistory();
 
     const handleBooking = (id) => {
-        history.push(`/order-place/${id}`)
+        history.push(`/order-place/${id}`);
+        window.scrollTo(0, 0);
     }
     return (
         <Col>

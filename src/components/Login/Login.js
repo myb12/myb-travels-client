@@ -28,6 +28,7 @@ const Login = () => {
 
         <Container style={{marginTop:100}}>
             <div className="row justify-content-center px-2 mt-5">
+                <h3 className="text-center mb-3">Login to your account</h3>
                 <div className="col-md-6 login-container d-flex justify-content-center">
                     <button onClick={handleGoogleSignIn} className="btn btn-regular ms-3  d-flex align-items-center"> <FcGoogle className="google-icon" /> Sign in with Google</button>
                 </div>
