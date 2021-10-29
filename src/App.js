@@ -9,6 +9,7 @@ import OrderPlace from './components/OrderPlace/OrderPlace';
 import Login from './components/Login/Login';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import MyOrders from './components/MyOrders/MyOrders';
 
 function App() {
   return (
@@ -24,6 +25,11 @@ function App() {
           <PrivateRoute path="/order-place/:serviceId">
             <OrderPlace />
           </PrivateRoute>
+
+          <PrivateRoute path="/my-orders">
+            <MyOrders />
+          </PrivateRoute>
+
           <Route path="/login">
             <Login />
           </Route>
