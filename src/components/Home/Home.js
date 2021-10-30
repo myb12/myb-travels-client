@@ -10,7 +10,7 @@ const Home = () => {
             <Banner />
             <Services />
             <Team/>
-            <Contact/>
+            <Contact/>P
         </section>
     );
 };

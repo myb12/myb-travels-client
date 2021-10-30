@@ -36,7 +36,7 @@ const Header = () => {
                                     <Nav.Link onClick={handleScroll} activeStyle={activeStyle} as={NavLink} to="/home">Home</Nav.Link>
                             }
 
-                            <Nav.Link onClick={handleScroll} activeStyle={activeStyle} as={NavLink} to="/add-service">Add A New Service</Nav.Link>
+                            <Nav.Link onClick={handleScroll} activeStyle={activeStyle} as={NavLink} to="/add-service">Add A New Tour</Nav.Link>
 
                             <Nav.Link onClick={handleScroll} activeStyle={activeStyle} as={NavLink} to="/my-orders">My Orders</Nav.Link>
 

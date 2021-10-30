@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Container, Table } from 'react-bootstrap';
 import { FaTrashAlt } from 'react-icons/fa';
 import useAuth from '../../hooks/useAuth';
+import CustomSpinner from '../Spinner/CustomSpinner';
 import './MyOrders.css';
 
 const MyOrders = () => {
@@ -33,6 +34,7 @@ const MyOrders = () => {
         }
     }
 
+    if (!myOrders.length)  return <CustomSpinner />;
 
     return (
         <Container style={{ marginTop: 100 }}>
