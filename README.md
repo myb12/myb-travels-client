@@ -15,7 +15,7 @@
 * User can sign in with google
 * Any invalid route will redirect to a 404 Page 
 
-### Tools used to build this project
+## Tools used to build this project
 
 ## Front End
 * ReactJs
