@@ -34,7 +34,7 @@ const AddService = () => {
                     <hr className="title-line" />
                 </div>
                 <div className="col-lg-4 col-md-6 col-sm-6">
-                    <h2 className="section-title">Add a service</h2>
+                    <h2 className="section-title">Add a Tour</h2>
                 </div>
                 <div className="col-lg-4 col-md-3 col-sm-3">
                     <hr className="title-line" />

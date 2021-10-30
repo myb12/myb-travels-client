@@ -41,7 +41,7 @@ const Team = () => {
                             <div>
                                 <img src="https://i.ibb.co/nnz5Mvj/about-7.jpg" alt="img" className="about-box-1-img" />
                                 <h3 className="about-box-1-title">Bappy <span>( Co-Founder )</span></h3>
-                                <p className="margin-bottom-15 gray-text">I'm the General Co-Founder of MYB Travels!</p>
+                                <p className="margin-bottom-15 gray-text">I'm the Co-Founder of MYB Travels!</p>
                             </div>
                             <div className="gray-text">
                                 <span className="team-social-icon">
