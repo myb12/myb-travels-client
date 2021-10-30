@@ -66,19 +66,19 @@ const Footer = () => {
                                 <p><a href="mailto:info@myb.com" title="MYB Travels">info@myb.com</a></p>
                                 <ul className="social-footer2">
                                     <li className="">
-                                        <a title="youtube" target="_blank" href="/#">
+                                        <span>
                                             <FaFacebookF />
-                                        </a>
+                                        </span>
                                     </li>
                                     <li className="">
-                                        <a href="/#" target="_blank" title="Twitter">
+                                        <span>
                                             <FaTwitter />
-                                        </a>
+                                        </span>
                                     </li>
                                     <li className="">
-                                        <a title="instagram" target="_blank" href="/#">
+                                        <span>
                                             <FaInstagram />
-                                        </a>
+                                        </span>
                                     </li>
                                 </ul>
                             </div>

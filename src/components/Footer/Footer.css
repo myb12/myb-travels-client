@@ -114,16 +114,19 @@ ul.social-footer2 li {
     padding: 0;
 }
 
-ul.social-footer2 li a:hover {
-    background-color:#fff;
-    color: #62ac1e;
-}
 
-ul.social-footer2 li a {
+
+ul.social-footer2 li span {
     display: block; 
     height:30px;
     width: 30px;
     text-align: center;
+    cursor: pointer;
+}
+
+ul.social-footer2 li span:hover {
+    background-color:#fff;
+    color: #62ac1e;
 }
 
 .btn{
