@@ -16,6 +16,11 @@ const Services = () => {
 
     return (
         <Container style={{ marginTop: 50 }}>
+            <div className="section-header section-margin-top row">
+                <div className="col-lg-4 col-md-3 col-sm-3"><hr className="title-line" /></div>
+                <div className="col-lg-4 col-md-6 col-sm-6"><h2 className="section-title">Our Tours</h2></div>
+                <div className="col-lg-4 col-md-3 col-sm-3"><hr className="title-line" /></div>
+            </div>
             <Row xs={1} md={2} lg={3} className="g-4">
                 {
                     services.map(service => <Service key={service._id} service={service} />)
