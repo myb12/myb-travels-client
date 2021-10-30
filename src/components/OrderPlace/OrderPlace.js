@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Col, Container, Form, Row } from 'react-bootstrap';
 import { useHistory, useParams } from 'react-router';
 import useAuth from '../../hooks/useAuth';
-import './OrderPlace.css';
 
 const OrderPlace = () => {
     const [specificService, setSpecificService] = useState({});

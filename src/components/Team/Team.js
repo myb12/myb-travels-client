@@ -16,92 +16,92 @@ const Team = () => {
                     <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 my-2">
                         <div className="about-box-1">
                             <div>
-                                <a href="/#"><img src="https://i.ibb.co/M6tvKnZ/about-6.jpg" alt="img" className="about-box-1-img" /></a>
-                                <h3 className="about-box-1-title">Thomas <span>( Founder )</span></h3>
-                                <p className="margin-bottom-15 gray-text">Proin gravida nibhvell aliquet. Aenean sollicitudin bibum auctor nisi elit.</p>
+                               <img src="https://i.ibb.co/M6tvKnZ/about-6.jpg" alt="img" className="about-box-1-img" />
+                                <h3 className="about-box-1-title">Yasin <span>( Founder )</span></h3>
+                                <p className="margin-bottom-15 gray-text">I'm the Founder of MYB Travels!</p>
                             </div>
                             <div className="gray-text">
-                                <a href="/#" className="team-social-icon">
+                                <span className="team-social-icon">
                                     <FaTwitter />
-                                </a>
-                                <a href="/#" className="team-social-icon">
+                                </span>
+                                <span className="team-social-icon">
                                     <FaFacebookF />
-                                </a>
-                                <a href="/#" className="team-social-icon">
-                                    <FaPinterestP/>
-                                </a>
-                                <a href="/#" className="team-social-icon">
+                                </span>
+                                <span className="team-social-icon">
+                                    <FaPinterestP />
+                                </span>
+                                <span className="team-social-icon">
                                     <FaGoogle />
-                                </a>
+                                </span>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 my-2">
                         <div className="about-box-1 ">
                             <div>
-                                <a href="/#"><img src="https://i.ibb.co/nnz5Mvj/about-7.jpg" alt="img" className="about-box-1-img" /></a>
-                                <h3 className="about-box-1-title">Keith <span>( Co-Founder )</span></h3>
-                                <p className="margin-bottom-15 gray-text">Proin gravida nibhvell aliquet. Aenean sollicitudin bibum auctor nisi elit.</p>
+                                <img src="https://i.ibb.co/nnz5Mvj/about-7.jpg" alt="img" className="about-box-1-img" />
+                                <h3 className="about-box-1-title">Bappy <span>( Co-Founder )</span></h3>
+                                <p className="margin-bottom-15 gray-text">I'm the General Co-Founder of MYB Travels!</p>
                             </div>
                             <div className="gray-text">
-                                <a href="/#" className="team-social-icon">
+                                <span className="team-social-icon">
                                     <FaTwitter />
-                                </a>
-                                <a href="/#" className="team-social-icon">
+                                </span>
+                                <span className="team-social-icon">
                                     <FaFacebookF />
-                                </a>
-                                <a href="/#" className="team-social-icon">
+                                </span>
+                                <span className="team-social-icon">
                                     <FaPinterestP/>
-                                </a>
-                                <a href="/#" className="team-social-icon">
+                                </span>
+                                <span className="team-social-icon">
                                     <FaGoogle />
-                                </a>
+                                </span>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 my-2">
                         <div className="about-box-1">
                             <div>
-                                <a href="/#"><img src="https://i.ibb.co/PxW7g4g/about-4.jpg" alt="img" className="about-box-1-img" /></a>
-                                <h3 className="about-box-1-title">John <span>( General Manager )</span></h3>
-                                <p className="margin-bottom-15 gray-text">Proin gravida nibhvell aliquet. Aenean sollicitudin bibum auctor nisi elit.</p>
+                                <img src="https://i.ibb.co/PxW7g4g/about-4.jpg" alt="img" className="about-box-1-img" />
+                                <h3 className="about-box-1-title">Asif <span>( General Manager )</span></h3>
+                                <p className="margin-bottom-15 gray-text">I'm the General Manager of MYB Travels!</p>
                             </div>
                             <div className="gray-text">
-                                <a href="/#" className="team-social-icon">
+                                <span className="team-social-icon">
                                     <FaTwitter />
-                                </a>
-                                <a href="/#" className="team-social-icon">
+                                </span>
+                                <span className="team-social-icon">
                                     <FaFacebookF />
-                                </a>
-                                <a href="/#" className="team-social-icon">
-                                    <FaPinterestP/>
-                                </a>
-                                <a href="/#" className="team-social-icon">
+                                </span>
+                                <span className="team-social-icon">
+                                    <FaPinterestP />
+                                </span>
+                                <span className="team-social-icon">
                                     <FaGoogle />
-                                </a>
+                                </span>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 my-2">
                         <div className="about-box-1">
                             <div>
-                                <a href="/#"><img src="https://i.ibb.co/CKQ6Qwh/about-5.jpg" alt="img" className="about-box-1-img" /></a>
-                                <h3 className="about-box-1-title">Smith <span>( Manager )</span></h3>
-                                <p className="margin-bottom-15 gray-text">Proin gravida nibhvell aliquet. Aenean sollicitudin bibum auctor nisi elit.</p>
+                                <img src="https://i.ibb.co/CKQ6Qwh/about-5.jpg" alt="img" className="about-box-1-img" />
+                                <h3 className="about-box-1-title">Saima <span>( Manager )</span></h3>
+                                <p className="margin-bottom-15 gray-text">I'm the Manager of MYB Travels!</p>
                             </div>
                             <div className="gray-text">
-                                <a href="/#" className="team-social-icon">
+                                <span className="team-social-icon">
                                     <FaTwitter />
-                                </a>
-                                <a href="/#" className="team-social-icon">
+                                </span>
+                                <span className="team-social-icon">
                                     <FaFacebookF />
-                                </a>
-                                <a href="/#" className="team-social-icon">
-                                    <FaPinterestP/>
-                                </a>
-                                <a href="/#" className="team-social-icon">
+                                </span>
+                                <span className="team-social-icon">
+                                    <FaPinterestP />
+                                </span>
+                                <span className="team-social-icon">
                                     <FaGoogle />
-                                </a>
+                                </span>
                             </div>
                         </div>
                     </div>

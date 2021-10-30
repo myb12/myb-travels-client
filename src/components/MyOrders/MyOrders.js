@@ -33,6 +33,7 @@ const MyOrders = () => {
         }
     }
 
+
     return (
         <Container style={{ marginTop: 100 }}>
             <div className="section-header section-margin-top row">
@@ -50,8 +51,8 @@ const MyOrders = () => {
                 <thead>
                     <tr>
                         <th>#</th>
-                        <th>Tour Title</th>
-                        <th>Tour Price</th>
+                        <th>Title</th>
+                        <th>Price</th>
                         <th>Order Status</th>
                         <th>Image</th>
                         <th>Actions</th>

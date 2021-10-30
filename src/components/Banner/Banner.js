@@ -8,8 +8,11 @@ const Banner = () => {
         <section className="banner-section" >
             <Container className="banner-container">
                 <h1 className="banner-heading">
-                    PLAN YOUR TOUR WITH <br />
-                    <span style={{ color:'#62ac1e'}}>MYB TRAVELS</span>
+                    PLAN YOUR TOUR WITH
+                    <br />
+                    MYB TRAVELS
+                    <br />
+                    FLEXIBLE & RISK FREE
                 </h1>
                 <Row className="banner-field">
                     <Col md={4}>

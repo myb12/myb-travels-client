@@ -6,7 +6,7 @@ import useAuth from '../../hooks/useAuth';
 import { useHistory, useLocation } from 'react-router';
 
 const Login = () => {
-    const { signInUsingGoogle, setIsLoading,  error, setError } = useAuth();
+    const { signInUsingGoogle, setIsLoading, error, setError } = useAuth();
     const history = useHistory();
     const location = useLocation();
 
@@ -26,7 +26,7 @@ const Login = () => {
 
     return (
 
-        <Container style={{marginTop:100}}>
+        <Container style={{ marginTop: 100 }}>
             <div className="section-header section-margin-top row">
                 <div className="col-lg-4 col-md-3 col-sm-3">
                     <hr className="title-line" />
@@ -43,6 +43,7 @@ const Login = () => {
                     <button onClick={handleGoogleSignIn} className="btn btn-regular ms-3  d-flex align-items-center"> <FcGoogle className="google-icon" /> Sign in with Google</button>
                 </div>
             </div>
+            <div className="row text-danger justify-content-center mt-3 w-100">{error}</div>
         </Container>
     );
 };

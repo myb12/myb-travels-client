@@ -13,7 +13,7 @@ const Footer = () => {
                         <div className="col-xs-12 col-sm-6 col-md-3">
                             <div className="widget subscribe no-box">
                                 <h5 className="widget-title">MYB Travels<span></span></h5>
-                                <p>About the company, little discription will goes here.. </p>
+                                <p>We design our tours so you can experience the world differently. You'll get the personal service, attention to detail and ease you're looking for, while enjoying the unmissable experiences you've always dreamed of.</p>
                             </div>
                         </div>
 

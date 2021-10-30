@@ -16,8 +16,7 @@ const NotFound = () => {
                                    Opps!
                                 </h3>
                                 <p>Page Not Found!</p>
-
-                                <Link to="/" className="btn btn-regular">Go to Home</Link>
+                                <Link to="/home" className="btn btn-regular">Go to Home</Link>
                             </div>
                         </div>
                     </div>

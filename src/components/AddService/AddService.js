@@ -27,20 +27,22 @@ const AddService = () => {
 
     };
 
-
-
-
     return (
         <Container style={{ marginTop: 100 }}>
             <div className="section-header section-margin-top row">
-                <div className="col-lg-4 col-md-3 col-sm-3"><hr className="title-line" /></div>
-                <div className="col-lg-4 col-md-6 col-sm-6"><h2 className="section-title">Add a service</h2></div>
-                <div className="col-lg-4 col-md-3 col-sm-3"><hr className="title-line" /></div>
+                <div className="col-lg-4 col-md-3 col-sm-3">
+                    <hr className="title-line" />
+                </div>
+                <div className="col-lg-4 col-md-6 col-sm-6">
+                    <h2 className="section-title">Add a service</h2>
+                </div>
+                <div className="col-lg-4 col-md-3 col-sm-3">
+                    <hr className="title-line" />
+                </div>
             </div>
             <form className="shipping-form" onSubmit={handleSubmit(onSubmit)}>
 
                 <Card>
-                    <h5 className="text-center">Add a service</h5>
                     <input  {...register("title", { required: true })} placeholder="Tour Title" />
                     {errors.title && <span className="error">This field is required</span>}
 

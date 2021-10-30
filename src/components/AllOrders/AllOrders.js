@@ -49,7 +49,7 @@ const AllOrders = () => {
     }
 
     return (
-        <Container Container style={{ marginTop: 100 }
+        <Container style={{ marginTop: 100 }
         }>
             <div className="section-header section-margin-top row">
                 <div className="col-lg-4 col-md-3 col-sm-3">
@@ -68,8 +68,8 @@ const AllOrders = () => {
                         <th>#</th>
                         <th>Name</th>
                         <th>Email</th>
-                        <th>Tour Title</th>
-                        <th>Tour Price</th>
+                        <th>Title</th>
+                        <th>Price</th>
                         <th>Order Status</th>
                         <th>Image</th>
                         <th>Action</th>
