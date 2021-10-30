@@ -36,7 +36,7 @@ const Service = ({ service }) => {
                         </button>
                     </div>
                     <div className="col-2 ps-0">
-                        <button className="h-100 w-100 btn btn-bookmark d-flex align-items-center justify-content-center" onClick={() => handleBooking(_id)}>
+                        <button className="h-100 w-100 btn btn-bookmark d-flex align-items-center justify-content-center">
                             <FaBookmark className="me-1" />
                         </button>
                     </div>
