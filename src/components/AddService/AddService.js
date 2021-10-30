@@ -19,7 +19,7 @@ const AddService = () => {
             .then(res => res.json())
             .then(data => {
                 if (data.insertedId) {
-                    alert('Service Inserted Successfully');
+                    alert('Tour Added Successfully');
                     reset();
                     history.push('/home');
                 }

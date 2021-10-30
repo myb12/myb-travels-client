@@ -19,7 +19,7 @@ const AllOrders = () => {
     }, [isApprove])
 
     const handleDelete = (id) => {
-        if (window.confirm('Do you really want to delete the product')) {
+        if (window.confirm('Do you really want to delete the order?')) {
             fetch(`https://glacial-tor-88710.herokuapp.com/my-orders/${id}`, {
                 method: 'DELETE',
             })
