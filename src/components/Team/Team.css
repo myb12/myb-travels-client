@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-	background-color: white;
     box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
     background: 0 0/270px 147px no-repeat #f5f7f7;
     border-radius: 8px;

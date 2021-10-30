@@ -3,6 +3,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import './Header.css';
+import logo from '../../images/myb.svg';
 
 
 const activeStyle = {
@@ -14,7 +15,10 @@ const Header = () => {
         <section>
             <Navbar bg="light" expand="lg" fixed="top">
                 <Container >
-                    <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+                    <Navbar.Brand href="#home">
+                        <img width="50" className="me-2" src={logo} alt="" />
+                        <span className="brand-name"> MYB Travels</span>
+                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">

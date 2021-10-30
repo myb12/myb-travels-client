@@ -3,12 +3,10 @@ import { Container, Table } from 'react-bootstrap';
 import { FaTrashAlt } from 'react-icons/fa';
 import useAuth from '../../hooks/useAuth';
 import './MyOrders.css';
-import { BiError } from 'react-icons/bi';
 
 const MyOrders = () => {
     const { user } = useAuth();
     const [myOrders, setMyOrders] = useState([]);
-    const [isApprove, setIsApprove] = useState(false);
 
     useEffect(() => {
         fetch(`https://glacial-tor-88710.herokuapp.com/my-orders?email=${user.email}`, {
@@ -18,7 +16,7 @@ const MyOrders = () => {
             .then(data => {
                 setMyOrders(data);
             })
-    }, [isApprove])
+    }, [])
 
     const handleDelete = (id) => {
         if (window.confirm('Do you really want to delete the product')) {
@@ -35,24 +33,19 @@ const MyOrders = () => {
         }
     }
 
-    const handleApprove = (id) => {
-        fetch(`https://glacial-tor-88710.herokuapp.com/orders/${id}`, {
-            method: 'PUT',
-            headers: {
-                'content-type': 'application/json'
-            },
-        })
-            .then(res => res.json())
-            .then(data => {
-                if (data.matchedCount > 0) {
-                    console.log(data);
-                    setIsApprove(!isApprove);
-                }
-            })
-    }
-
     return (
         <Container style={{ marginTop: 100 }}>
+            <div className="section-header section-margin-top row">
+                <div className="col-lg-4 col-md-3 col-sm-3">
+                    <hr className="title-line" />
+                </div>
+                <div className="col-lg-4 col-md-6 col-sm-6">
+                    <h2 className="section-title">My Orders</h2>
+                </div>
+                <div className="col-lg-4 col-md-3 col-sm-3">
+                    <hr className="title-line" />
+                </div>
+            </div>
             <Table striped bordered responsive >
                 <thead>
                     <tr>
@@ -70,9 +63,8 @@ const MyOrders = () => {
                             <td>{i + 1}</td>
                             <td>{order.title}</td>
                             <td>{order.price}</td>
-                            <td className="d-flex flex-column">
+                            <td >
                                 {order.orderStatus}
-                                <button onClick={() => handleApprove(order._id)} className="btn btn-approve" disabled={order.orderStatus === 'Approved' ? true : false} >Approve</button>
                             </td>
                             <td>
                                 <img height="60" width="60" src={order.imgURL} alt="" />

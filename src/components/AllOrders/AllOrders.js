@@ -51,6 +51,17 @@ const AllOrders = () => {
     return (
         <Container Container style={{ marginTop: 100 }
         }>
+            <div className="section-header section-margin-top row">
+                <div className="col-lg-4 col-md-3 col-sm-3">
+                    <hr className="title-line" />
+                </div>
+                <div className="col-lg-4 col-md-6 col-sm-6">
+                    <h2 className="section-title">Manage all orders</h2>
+                </div>
+                <div className="col-lg-4 col-md-3 col-sm-3">
+                    <hr className="title-line" />
+                </div>
+            </div>
             <Table striped bordered responsive >
                 <thead>
                     <tr>
@@ -74,7 +85,7 @@ const AllOrders = () => {
                             <td>{order.price}</td>
                             <td className="d-flex flex-column">
                                 {order.orderStatus}
-                                <button onClick={() => handleApprove(order._id)} className="btn btn-approve" disabled={order.orderStatus === 'Approved' ? true : false}>Approve</button>
+                                <button onClick={() => handleApprove(order._id)} className="btn btn-approve" disabled={order.orderStatus === 'Approved'}>Approve</button>
                             </td>
                             <td>
                                 <img height="60" width="60" src={order.imgURL} alt="" />

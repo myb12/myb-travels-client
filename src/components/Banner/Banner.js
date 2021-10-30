@@ -7,12 +7,15 @@ const Banner = () => {
     return (
         <section className="banner-section" >
             <Container className="banner-container">
-                <h1 className="banner-heading">PLAN YOUR TOUR WITH MYB TRAVELS</h1>
+                <h1 className="banner-heading">
+                    PLAN YOUR TOUR WITH <br />
+                    <span style={{ color:'#62ac1e'}}>MYB TRAVELS</span>
+                </h1>
                 <Row className="banner-field">
                     <Col md={4}>
                         <div className="input-group">
                             <span className="input-group-text">
-                                <FaMapMarkerAlt />
+                                <FaMapMarkerAlt className="banner-icon" />
                             </span>
                             <input type="text" className="form-control" aria-label="Dollar amount (with dot and two decimal places)" placeholder="Place or Hotel" />
                         </div>
@@ -20,7 +23,7 @@ const Banner = () => {
                     <Col md={4}>
                         <div className="input-group">
                             <span className="input-group-text">
-                                <FaRegCalendarAlt />
+                                <FaRegCalendarAlt className="banner-icon" />
                             </span>
                             <input type="date" className="form-control" aria-label="Dollar amount (with dot and two decimal places)" />
                         </div>
@@ -28,7 +31,7 @@ const Banner = () => {
                     <Col md={4}>
                         <div className="input-group">
                             <span className="input-group-text">
-                                <FaRegCalendarAlt />
+                                <FaRegCalendarAlt className="banner-icon" />
                             </span>
                             <input type="date" className="form-control" aria-label="Dollar amount (with dot and two decimal places)" />
                         </div>

@@ -1,0 +1,26 @@
+.page_404{ 
+    padding-top:40px; 
+    background:#fff; 
+}
+
+.page_404  img{ width:100%;}
+
+.four_zero_four_bg{
+ background-image: url(https://media1.giphy.com/media/UoeaPqYrimha6rdTFV/giphy.gif?cid=ecf05e47qmh54s67lynmhip6i8se93wjdby7bzm2sv31ohrz&rid=giphy.gif&ct=g);
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+
+ .four_zero_four_bg h1{
+ font-size:80px;
+ }
+ 
+.four_zero_four_bg h3{
+	font-size:80px;
+}
+
+.footer_404 {
+    text-align: center;
+    margin-top: -50pxma;
+}

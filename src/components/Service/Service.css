@@ -2,5 +2,82 @@
     height:200px;
 }
 .service-card{
-  
+    position: relative;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+    border-radius: 8px;
+    overflow: visible;
+    transition: all .28s cubic-bezier(.15,0,.15,1) 0s;
+}
+
+.service-card:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+.price-ribbon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    min-width: 115px;
+    height: 30px;
+    background-color: #62ac1e;
+    top: 0.5rem;
+    right: -0.5rem;
+    color: #fff;
+}
+
+.price-ribbon::before,
+.price-ribbon::after {
+    content: "";
+    position: absolute;
+}
+
+.price-ribbon::before {
+    height: 0.5rem;
+    width: 0.5rem;
+    background-color: #356408;
+    clip-path: polygon(0 100%, 0 0, 100% 0);
+    right: 0;
+    bottom: -0.5rem;
+}
+
+.price-ribbon::after {
+    width: 25px;
+    height: 30px;
+    background-color: #62ac1e;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    bottom: 0;
+    left: -24px;
+}
+.btn-book {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    border-bottom-left-radius: 6px !important;
+    background-color: #62ac1e !important;
+    border-color: #62ac1e !important;
+    color: #fff !important;
+    transition: all 0.3s linear !important;
+}
+
+.btn-book:hover {
+    background: #fff !important;
+    color: #62ac1e !important;
+    border-color: #62ac1e !important;
+}
+
+.btn-bookmark{
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    border-bottom-right-radius: 6px !important;
+    background-color: #F5D338 !important;
+    border-color: #F5D338 !important;
+    color: #fff !important;
+    transition: all 0.3s linear !important;
+}
+
+.btn-bookmark:hover {
+    background: #fff !important;
+    color: #F5D338 !important;
+    border-color: #fff !important;
 }
