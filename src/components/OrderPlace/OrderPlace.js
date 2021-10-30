@@ -59,9 +59,8 @@ const OrderPlace = () => {
         specificService.name = user.displayName;
         specificService.email = user.email;
         specificService.orderStatus = "Pending";
-
         delete specificService._id;
-        console.log(specificService);
+        
         fetch('https://glacial-tor-88710.herokuapp.com/orders', {
             method: 'POST',
             headers: {

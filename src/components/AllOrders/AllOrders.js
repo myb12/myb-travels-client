@@ -42,7 +42,6 @@ const AllOrders = () => {
             .then(res => res.json())
             .then(data => {
                 if (data.matchedCount > 0) {
-                    console.log(data);
                     setIsApprove(!isApprove);
                 }
             })
