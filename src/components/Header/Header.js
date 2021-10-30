@@ -50,7 +50,7 @@ const Header = () => {
                             }
 
                             {
-                                user.email ? <Nav.Link onClick={logOut} as={NavLink} to="/">Logout</Nav.Link>
+                                user.email ? <Nav.Link onClick={logOut} >Logout</Nav.Link>
                                     :
                                     <Nav.Link onClick={handleScroll} activeStyle={activeStyle} as={NavLink} to="/login">Login</Nav.Link>
                             }
