@@ -1,6 +1,7 @@
 ## MYB Travels - A simple Tours & Travel Packages Related Website
 
-## Live-link: https://myb-travel.web.app/
+## Live link: https://myb-travel.web.app/
+## Server site link: https://github.com/myb12/myb-travels-server
 
 ### To run locally
 * Simply clone the repository. Run "npm install" command.
