@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Table } from 'react-bootstrap';
 import { FaTrashAlt } from 'react-icons/fa';
+import { BASE_URL } from '../../config/config';
 import useAuth from '../../hooks/useAuth';
 import CustomSpinner from '../Spinner/CustomSpinner';
 import './MyOrders.css';
@@ -10,7 +11,7 @@ const MyOrders = () => {
     const [myOrders, setMyOrders] = useState([]);
 
     useEffect(() => {
-        fetch(`https://glacial-tor-88710.herokuapp.com/my-orders?email=${user.email}`, {
+        fetch(`${BASE_URL}/my-orders?email=${user.email}`, {
             method: 'POST',
         })
             .then(res => res.json())
@@ -21,7 +22,7 @@ const MyOrders = () => {
 
     const handleDelete = (id) => {
         if (window.confirm('Do you really want to delete the order?')) {
-            fetch(`https://glacial-tor-88710.herokuapp.com/my-orders/${id}`, {
+            fetch(`${BASE_URL}/my-orders/${id}`, {
                 method: 'DELETE',
             })
                 .then(res => res.json())

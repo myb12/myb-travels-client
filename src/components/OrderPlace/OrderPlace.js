@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Form, Row } from 'react-bootstrap';
 import { useHistory, useParams } from 'react-router';
+import { BASE_URL } from '../../config/config';
 import useAuth from '../../hooks/useAuth';
 
 const OrderPlace = () => {
@@ -10,7 +11,7 @@ const OrderPlace = () => {
     const history = useHistory();
 
     useEffect(() => {
-        fetch(`https://glacial-tor-88710.herokuapp.com/services/${serviceId}`)
+        fetch(`${BASE_URL}/services/${serviceId}`)
             .then(res => res.json())
             .then(data => {
                 setSpecificService(data);
@@ -61,7 +62,7 @@ const OrderPlace = () => {
         specificService.orderStatus = "Pending";
         delete specificService._id;
         
-        fetch('https://glacial-tor-88710.herokuapp.com/orders', {
+        fetch(`${BASE_URL}/orders`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

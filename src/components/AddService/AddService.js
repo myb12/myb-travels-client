@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, Container } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import { useHistory } from 'react-router';
+import { BASE_URL } from '../../config/config';
 import './AddService.css'
 
 const AddService = () => {
@@ -9,7 +10,7 @@ const AddService = () => {
     const history = useHistory();
 
     const onSubmit = data => {
-        fetch('https://glacial-tor-88710.herokuapp.com/services', {
+        fetch(`${BASE_URL}/services`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

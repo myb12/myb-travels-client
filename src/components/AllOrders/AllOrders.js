@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { Container, Table } from 'react-bootstrap';
 import { FaTrashAlt } from 'react-icons/fa';
+import { BASE_URL } from '../../config/config';
 import CustomSpinner from '../Spinner/CustomSpinner';
 import './AllOrders.css';
 
@@ -11,7 +12,7 @@ const AllOrders = () => {
     const [isApprove, setIsApprove] = useState(false);
 
     useEffect(() => {
-        fetch('https://glacial-tor-88710.herokuapp.com/all-orders')
+        fetch(`${BASE_URL}/all-orders`)
             .then(res => res.json())
             .then(data => {
                 setAllOrders(data);
@@ -20,7 +21,7 @@ const AllOrders = () => {
 
     const handleDelete = (id) => {
         if (window.confirm('Do you really want to delete the order?')) {
-            fetch(`https://glacial-tor-88710.herokuapp.com/my-orders/${id}`, {
+            fetch(`${BASE_URL}/my-orders/${id}`, {
                 method: 'DELETE',
             })
                 .then(res => res.json())
@@ -34,7 +35,7 @@ const AllOrders = () => {
     }
 
     const handleApprove = (id) => {
-        fetch(`https://glacial-tor-88710.herokuapp.com/orders/${id}`, {
+        fetch(`${BASE_URL}/orders/${id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
+import { BASE_URL } from '../../config/config';
 import Service from '../Service/Service';
 import CustomSpinner from '../Spinner/CustomSpinner';
 
 const Services = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch('https://glacial-tor-88710.herokuapp.com/services')
+        fetch(`${BASE_URL}/services`)
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
